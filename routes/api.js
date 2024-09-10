@@ -54,6 +54,7 @@ module.exports = function (app) {
           status_text: status_text || "",
           created_on: new Date(),
           updated_on: new Date(),
+          open: true, 
           created_by: created_by || "",
         })
         const issue = await issueModel.save();
